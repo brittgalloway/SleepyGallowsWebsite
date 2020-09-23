@@ -7,7 +7,7 @@ from . import views
 
 
 urlpatterns = [
-    path('/webdev', include('animation.urls')),
-
+    path('/webdev', include('webdev.urls')),
+    path('<int:project_id>/',views.project, include('webdev.urls')),
     
 ]
