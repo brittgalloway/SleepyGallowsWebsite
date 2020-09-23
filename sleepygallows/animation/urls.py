@@ -7,6 +7,10 @@ from . import views
 
 
 urlpatterns = [
-    path('/animation', include('animation.urls')),
+    path('/animation', views.index, name=index),
+    path('/animation/client', views.client, name=client),
+    path('/animation/original', views.original, name=original),
+    path('/animation/original/plh', views.plh, name=plh),
+    path('/animation/fun', views.fun, name=fun),
     
 ]
